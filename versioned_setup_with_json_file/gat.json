@@ -1,0 +1,68 @@
+{
+  "application_url": "https://your-app.com",
+  "name": "Buddy.works demo - versioned setup with json file",
+  "description": "Please don't limit yourself to test cases, we're open to exploratory testing issues too!",
+  "credentials_and_access_instructions": "Login as awesome.user@buddy.works / hopefullyGeneratedPassword",
+  "test_cases":[
+    {
+      "name":"Load ScaleUp! Company page",
+      "steps":[
+        {
+          "instruction":"Load https://scaleupcompany.com page",
+          "expected_result":"Page loads under 1s"
+        }
+      ]
+    },
+    {
+      "name":"ScaleUp! company page <=> Slack integration",
+      "steps":[
+        {
+          "instruction":"Look for the slack button",
+          "expected_result":"Slack button should be visible next to Contact Us! button"
+        },
+        {
+          "instruction":"Click the slack button",
+          "expected_result":"Prompt to install ScaleUp! slack application is displayed"
+        },
+        {
+          "instruction":"Integrate with any slack channel",
+          "expected_result":"You should see our welcome message on the slack"
+        }
+      ]
+    },
+    {
+      "name":"ScaleUp! company page <=> Jira integration",
+      "steps":[
+        {
+          "instruction":"Look for the jira button",
+          "expected_result":"Jira button should be visible next to Slack button"
+        },
+        {
+          "instruction":"Click the jira button",
+          "expected_result":"Prompt to install ScaleUp! jira application is displayed"
+        }
+      ]
+    },
+    {
+      "name":"Mobile registration form test",
+      "steps":[
+        {
+          "instruction":"Go to the ScaleUp! page and click Contact Us! button",
+          "expected_result":"You should be redirected to the registration form"
+        },
+        {
+          "instruction":"Click on the First Name field",
+          "expected_result":"View scrolls to Company Email Address field and keyboard opens below it"
+        },
+        {
+          "instruction":"Click on the Company Email Address field",
+          "expected_result":"View scrolls to Job Title field and keyboard opens below it"
+        },
+        {
+          "instruction":"Click on the Job Title field",
+          "expected_result":"View scrolls to Speak To Our Team button and keyboard opens below it"
+        }
+      ]
+    }
+  ]
+}
